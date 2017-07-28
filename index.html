@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="mod" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body ng-controller="ctrl">
+    <div class="header">
+      <h2 class="title">Currecy Converter</h2>
+    </div>
+    <!-- <p ng-model="test">{{ test }}</p> -->
+    <div class="content">
+      <h4>Enter amount, to and from currency below</h4>
+      <div class="contain">
+        <input id="enter" type="number" placeholder="Currency Input" ng-model="convert">
+        <select class="sltCur" ng-model="slt1">
+          <option ng-repeat="a in langArry" value="{{a}}">{{a}}</option>
+        </select>
+        <input id="enter" type="number" placeholder="Currency Output" ng-model="out.to_amount" disabled>
+        <select class="sltCur" ng-model="slt2">
+          <option ng-repeat="a in langArry" value="{{a}}">{{a}}</option> {{}}
+        </select>
+      </div>
+      <button type="button" class="btn btn-default" ng-click="testBtn(convert, slt1, slt2)">
+        Convert
+      </button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+    <script src="js/module/module.js" charset="utf-8"></script>
+    <script src="js/ctrl/ctrl.js" charset="utf-8"></script>
+    <script src="js/ctrl/ctrl2.js" charset="utf-8"></script>
+    <script src="js/module/config.js" charset="utf-8"></script>
+    <script src="js/directives/direct.js" charset="utf-8"></script>
+    <script src="js/service/service.js" charset="utf-8"></script>
+  </body>
+</html>

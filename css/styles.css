@@ -1,0 +1,60 @@
+body, .header{
+  width: 100%;
+  margin: 1% auto;
+}
+.content {
+  width: 30%;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: lightgrey;
+  text-align: center;
+  border-radius: 5%;
+  border: 4px dashed black;
+}
+#enter, #out {
+  width: 50%;
+  padding: 1%;
+  background-color: lightgrey;
+  border-bottom: 1px dashed black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  display: inline-block;
+  margin: 2% 0%;
+  outline: none;
+}
+#enter:hover, #out:hover, #enter:focus, #out:focus {
+  background-color: white;
+  border: 0;
+}
+button {
+  width: 50%;
+  margin: 2% 0% 5% 0%;
+  border: 0.5px solid grey;
+  background-color: lightgrey;
+  padding: 1%;
+  outline: none;
+}
+button:hover {
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+button:active {
+border: 1px solid grey;
+border-style: inset;
+box-shadow: 0;
+}
+.sltCur {
+  display: inline-block;
+  margin: 2%;
+}
+.contain {
+  width:100%;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+}
+.sltCur:first-child {
+  visibility: hidden;
+}
